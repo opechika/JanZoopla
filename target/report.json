@@ -11,7 +11,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,17 +23,38 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-02T20:31:39.722Z",
+        "start_timestamp": "2020-02-09T20:45:09.264Z",
+        "before": [
+          {
+            "result": {
+              "duration": 15242000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.setUp()"
+            }
+          }
+        ],
         "line": 22,
         "name": "Customer can search for any property",
         "description": "",
         "id": "search-for-sale-properties;customer-can-search-for-any-property;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1860000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 10,
@@ -69,7 +89,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,
@@ -87,7 +106,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 13,
@@ -177,11 +195,33 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-02T20:31:39.855Z",
+        "start_timestamp": "2020-02-09T20:45:26.527Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10835000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.setUp()"
+            }
+          }
+        ],
         "line": 6,
         "name": "Customer",
         "description": "",
         "id": "search-for-rent-properties;customer",
+        "after": [
+          {
+            "result": {
+              "duration": 939000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [

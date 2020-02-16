@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2080000000,
               "status": "passed"
             },
             "line": 7,
@@ -24,17 +24,39 @@
         ]
       },
       {
-        "start_timestamp": "2020-02-02T20:31:39.722Z",
+        "start_timestamp": "2020-02-16T19:27:35.831Z",
+        "before": [
+          {
+            "result": {
+              "duration": 11489000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.setUp()"
+            }
+          }
+        ],
         "line": 22,
         "name": "Customer can search for any property",
         "description": "",
         "id": "search-for-sale-properties;customer-can-search-for-any-property;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1574000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 1000000,
+              "duration": 2027000000,
               "status": "passed"
             },
             "line": 10,
@@ -69,7 +91,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 12,
@@ -87,7 +108,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 13,
@@ -122,6 +142,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 15,
@@ -177,16 +198,39 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2020-02-02T20:31:39.855Z",
+        "start_timestamp": "2020-02-16T19:27:53.106Z",
+        "before": [
+          {
+            "result": {
+              "duration": 9828000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.setUp()"
+            }
+          }
+        ],
         "line": 6,
         "name": "Customer",
         "description": "",
         "id": "search-for-rent-properties;customer",
+        "after": [
+          {
+            "result": {
+              "duration": 1135000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "co.uk.zoopla.hooks.Hook.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
+              "duration": 2352000000,
               "status": "passed"
             },
             "line": 7,

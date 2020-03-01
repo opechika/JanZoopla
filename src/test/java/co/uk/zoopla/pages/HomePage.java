@@ -15,10 +15,33 @@ public class HomePage extends BasePage
 
     @FindBy(id = "search-input-location")
     private WebElement searchBox;
+    @FindBy(id = "forsale_price_max")
+    private WebElement MaxPrice;
+    @FindBy(id = "property_type")
+    private WebElement propertyType;
+    @FindBy(id = "beds_min")
+    private WebElement noOfBed;
     @FindBy(name = "price_min")
     private WebElement MinPrice;
     @FindBy(css = ".button.button--primary")
     private WebElement searchButton;
+
+
+
+    public void selectNoOfBedrooms(String bed)
+    {
+        selectByText(noOfBed, bed);
+    }
+
+    public void selectMaximumPrice(String maxiPrice)
+    {
+        selectByText(MaxPrice, maxiPrice);
+    }
+
+    public void selectPropertyType(String property)
+    {
+        selectByText(propertyType, property);
+    }
 
     public void enterLocation(String location)
     {
@@ -29,6 +52,8 @@ public class HomePage extends BasePage
     {
         selectByText(MinPrice, miniPrice);
     }
+
+
 
     public SearchResultPage clickOnSearchButton()
     {

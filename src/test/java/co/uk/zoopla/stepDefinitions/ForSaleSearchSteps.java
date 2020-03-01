@@ -30,8 +30,8 @@ public class ForSaleSearchSteps extends BasePage {
     }
 
     @When("I select {string} from Max price dropdown")
-    public void i_select_from_Max_price_dropdown(String string) {
-
+    public void i_select_from_Max_price_dropdown(String maximumPrice) {
+        homePage.selectMaximumPrice(maximumPrice);
     }
 
     @When("I select {string} from Property type dropdown")

@@ -28,9 +28,9 @@ public class HomePage extends BasePage
 
 
 
-    public void selectNoOfBedrooms(String bed)
+    public void selectNoOfBedrooms(String moses)
     {
-        selectByText(noOfBed, bed);
+        selectByText(noOfBed, moses);
     }
 
     public void selectMaximumPrice(String maxiPrice)

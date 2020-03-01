@@ -35,13 +35,13 @@ public class ForSaleSearchSteps extends BasePage {
     }
 
     @When("I select {string} from Property type dropdown")
-    public void i_select_from_Property_type_dropdown(String string) {
-
+    public void i_select_from_Property_type_dropdown(String property) {
+        homePage.selectPropertyType(property);
     }
 
     @When("I select {string} from Bedrooms dropdown")
-    public void i_select_from_Bedrooms_dropdown(String string) {
-
+    public void i_select_from_Bedrooms_dropdown(String bed) {
+        homePage.selectNoOfBedrooms(bed);
     }
 
     @When("I click on Search button")

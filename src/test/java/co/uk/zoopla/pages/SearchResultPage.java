@@ -10,4 +10,6 @@ public class SearchResultPage extends BasePage
         this.driver = driver;
         PageFactory.initElements(driver, this);
     }
+
+
 }

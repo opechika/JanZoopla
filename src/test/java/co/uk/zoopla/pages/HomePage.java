@@ -57,7 +57,7 @@ public class HomePage extends BasePage
 
     public SearchResultPage clickOnSearchButton()
     {
-        searchBox.click();
+        searchButton.click();
         return new SearchResultPage(driver);
     }
 

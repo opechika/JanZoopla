@@ -74,7 +74,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>No Name (add projectName to cucumber-reporting.properties)</td>
-      <td>01 Mar 2020, 20:02</td>
+      <td>08 Mar 2020, 19:33</td>
     </tr>
   </tbody>
 </table>
@@ -127,19 +127,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Search For Sale Properties</td>
-          <td      class="passed"    >9</td>
-          <td >0</td>
-          <td >0</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >7</td>
           <td >0</td>
           <td >0</td>
           <td class="total">9</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="21669000000">21.669</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="24755000000">24.755</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,7 +171,7 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
   <span class="name">Search For Sale Properties</span>
 
@@ -191,7 +191,7 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">2.753</span>
+  <span class="lead-duration duration">2.973</span>
 
 
   <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
@@ -234,7 +234,7 @@ $(document).ready(function() {
   <span class="keyword indention">Given</span>
   <span class="name">I navigate to zoopla homepage</span>
 
-  <span class="lead-duration duration">2.753</span>
+  <span class="lead-duration duration">2.973</span>
 
 </div>
 
@@ -272,12 +272,12 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">18.916</span>
+  <span class="lead-duration duration">21.782</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-3">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-3">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario Outline</span>
   <span class="name">Customer can search for any property</span>
 
@@ -288,7 +288,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-3" class="collapse collapsable-details ">
+  <div id="element-3" class="collapse collapsable-details  in ">
 
 
   <div class="inner-level hooks-element-before">
@@ -308,9 +308,9 @@ $(document).ready(function() {
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-              <span class="location name">co.uk.zoopla.hooks.Hook.setUp()</span>
+              <span class="location name">co.uk.zoopla.hooks.Hook.setUp(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">12.867</span>
+  <span class="lead-duration duration">12.657</span>
 
           </div>
 
@@ -327,9 +327,9 @@ $(document).ready(function() {
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-5">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-5">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -339,15 +339,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-5" class="inner-level collapse collapsable-details ">
+  <div id="steps-5" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
   <span class="name">I enter a <span class="argument">&quot;Manchester&quot;</span> in the search text box</span>
 
-  <span class="lead-duration duration">3.357</span>
+  <span class="lead-duration duration">21.782</span>
 
 </div>
 
@@ -355,6 +355,46 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
+          <a>org.openqa.selenium.NoSuchElementException:</a>
+      </div>
+      <div id="msg-6" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#search\-inpu\-location&quot;}
+  (Session info: chrome=80.0.3987.132)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-4F8JTGQ', ip: '192.168.1.136', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_201'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 80.0.3987.132, chrome: {chromedriverVersion: 80.0.3987.106 (f68069574609..., userDataDir: C:\Users\D4TSOL~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:55633}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 925690c5b06a716b15b366069c15783c
+*** Element info: {Using=id, value=search-inpu-location}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy17.sendKeys(Unknown Source)
+	at co.uk.zoopla.pages.HomePage.enterLocation(HomePage.java:48)
+	at co.uk.zoopla.stepDefinitions.ForSaleSearchSteps.i_enter_a_in_the_search_text_box(ForSaleSearchSteps.java:27)
+	at &#10045;.I enter a &quot;Manchester&quot; in the search text box(file:///C:/workspace/test/JanZoopla/src/test/java/co/uk/zoopla/features/CustomerCanSearchForPropertiesForSale.feature:10)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -370,11 +410,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I select <span class="argument">&quot;&pound;120,000&quot;</span> from Min price dropdown</span>
 
-  <span class="lead-duration duration">0.526</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -397,11 +437,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I select <span class="argument">&quot;&pound;230,000&quot;</span> from Max price dropdown</span>
 
-  <span class="lead-duration duration">0.200</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -424,11 +464,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I select <span class="argument">&quot;Houses&quot;</span> from Property type dropdown</span>
 
-  <span class="lead-duration duration">0.304</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -451,11 +491,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I select <span class="argument">&quot;3+&quot;</span> from Bedrooms dropdown</span>
 
-  <span class="lead-duration duration">0.368</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -478,11 +518,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on Search button</span>
 
-  <span class="lead-duration duration">1.321</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -505,11 +545,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
   <span class="name">a list of <span class="argument">&quot;Houses&quot;</span> in <span class="argument">&quot;Manchester&quot;</span> are displayed</span>
 
-  <span class="lead-duration duration">11.333</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -532,11 +572,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
   <span class="name">I click on one of the results links</span>
 
-  <span class="lead-duration duration">1.507</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -563,7 +603,7 @@ $(document).ready(function() {
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-7">
 
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -575,13 +615,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-6" class="inner-level collapse collapsable-details ">
+    <div id="after-7" class="inner-level collapse collapsable-details ">
         <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">co.uk.zoopla.hooks.Hook.tearDown()</span>
 
-  <span class="lead-duration duration">2.260</span>
+  <span class="lead-duration duration">5.112</span>
 
           </div>
 
@@ -590,6 +630,19 @@ $(document).ready(function() {
 
 
 
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-8" class="collapsable-control">
+      <a>failurePage.png</a>
+      <a href="embeddings/embedding_-1424370053.unknown" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-8" class="collapse collapsable-details ">
+        <pre class="embedding-content">This file cannot be displayed. Use download button to get the content as file.</pre>
+    </div>
+  </div>
+  </div>
 
         </div>
     </div>

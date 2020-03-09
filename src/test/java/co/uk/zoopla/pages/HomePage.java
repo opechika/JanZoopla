@@ -13,7 +13,7 @@ public class HomePage extends BasePage
         PageFactory.initElements(driver, this);
     }
 
-    @FindBy(id = "search-input-location")
+    @FindBy(id = "search-inpu-location")
     private WebElement searchBox;
     @FindBy(id = "forsale_price_max")
     private WebElement MaxPrice;
@@ -45,6 +45,7 @@ public class HomePage extends BasePage
 
     public void enterLocation(String location)
     {
+        waitForElementToBeDisplayed(searchBox);
         searchBox.sendKeys(location);
     }
 
